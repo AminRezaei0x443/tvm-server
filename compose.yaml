@@ -1,0 +1,8 @@
+services:
+  server:
+    build:
+      context: .
+    environment:
+      - PORT=9344
+    ports:
+      - 9755:9755

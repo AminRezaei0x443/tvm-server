@@ -1,1 +1,7 @@
-click==8.1.3 ; python_version >= "3.10" and python_version < "4.0"
+fastapi==0.104.1
+pydantic==2.5.2
+pytest==7.4.2
+python-dotenv==1.0.0
+setuptools==65.5.0
+tonpy==0.0.0.1.2b0
+uvicorn==0.24.0.post1
