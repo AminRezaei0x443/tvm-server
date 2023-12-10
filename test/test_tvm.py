@@ -24,3 +24,13 @@ def test_pool_data_fail():
 
     r = run_get_method(code, data, "get_pool_full_data")
     assert r.ok is False
+
+
+def test_pool_data_json():
+    d = load_data()
+    code = d["pool_code"]
+    data = d["pool_data"]
+    config = d["config"]
+
+    r = run_get_method(code, data, "get_pool_full_data", config=config)
+    print(r.to_json())
