@@ -1,6 +1,6 @@
 from fastapi.routing import APIRouter
 
-from .models import GetMethodRequest
+from tvm_server.srv.routers.models import GetMethodRequest
 from tonpy.types import Cell
 from tvm_server.tvm import run_get_method
 

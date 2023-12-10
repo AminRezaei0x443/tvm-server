@@ -11,6 +11,7 @@ setup(
     keywords=[],
     entry_points={
         "console_scripts": [
+            "tvm-server=tvm_server.main:main"
         ],
     },
     url="https://github.com/AminRezaei0x443/py-tvm-server",

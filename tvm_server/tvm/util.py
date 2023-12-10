@@ -21,5 +21,5 @@ def entry_to_json(entry: Entry):
 
 
 def stack_to_json(stack: Stack) -> list:
-    l = stack.unpack_rec()
-    return entry_to_json(l)["tuple"]
+    sl = stack.unpack_rec()
+    return entry_to_json(sl)["tuple"]
