@@ -3,6 +3,6 @@ services:
     build:
       context: .
     environment:
-      - PORT=9344
+      - PORT=9755
     ports:
       - 9755:9755

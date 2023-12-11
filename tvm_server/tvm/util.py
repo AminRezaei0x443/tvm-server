@@ -10,7 +10,7 @@ def entry_to_json(entry: Entry):
             d.append(entry_to_json(e))
         return {"type": "tuple", "tuple": d}
     if isinstance(entry, int):
-        return {"type": "int", "num": entry}
+        return {"type": "int", "num": str(entry)}
     if isinstance(entry, Cell):
         return {"type": "cell", "cell": entry.to_boc()}
     if isinstance(entry, CellSlice):
